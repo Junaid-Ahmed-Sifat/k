@@ -1,0 +1,507 @@
+/* .header{
+    margin-left: 211px;
+    margin-right: 211px;
+} */
+
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set base colors using CSS variables */
+:root {
+    --dark: #191720;
+    --white: #FFF;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Ensures the whole body uses Inter if available */
+}
+
+/* Header and Navbar styling */
+.header {
+    background-color: var(--white);
+    padding: 1rem;
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 50px; /* Adjust logo size accordingly */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Spacing between nav items */
+}
+
+.nav-links .r {
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Spacing between login and sign up */
+}
+
+
+
+.log{
+    color: var(--Dark, #191720);
+    text-decoration: none;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 28px; 
+}
+
+.signup-btn{
+    text-decoration: none;
+    border-radius: 36px;
+    background: #E94339;
+    width: 105px;
+    height: 36px;
+}
+
+.sp-sign{
+    color: var(--White, #FFF);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 28px; /* 175% */
+    padding-left: 23%;
+    padding-top: 85px;
+}
+
+
+
+
+/* sec 1 */
+
+.food-delivery-partner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    max-width: 1550px; /* Adjusted max-width */
+    margin: 0 auto; /* Centers the section like the navbar */
+}
+
+.food-delivery-partner .content {
+    width: 50%;
+}
+
+.food-delivery-partner .image {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end; /* Aligns the image to the far right */
+    padding-right: 2rem; /* Additional right padding to ensure the image aligns with the Sign Up button above */
+}
+
+.food-delivery-partner .image img {
+    max-width: 80%; /* Adjust the max-width to prevent the image from being too wide */
+    height: auto;
+    border-radius: 36px; /* Rounded corners for the image */
+    background: #F2EBDA; /* Light background color for the image area */
+    padding: 1rem; /* Padding to create some space around the image inside its container */
+}
+
+.food-delivery-partner {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.h1-cont{
+    margin-bottom: 1rem;
+    color: var(--Dark, #191720);
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 65px; /* 106.557% */
+}
+
+.food-delivery-partner p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.food-delivery-partner input {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 1.6rem); /* Subtracting padding */
+}
+
+.food-delivery-partner button {
+    background-color: #FF5331;
+    color: white;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.food-delivery-partner .icons-two a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #007BFF; /* A blue color */
+    text-decoration: none;
+}
+
+
+/* sec2 */
+
+.promo-section {
+    text-align: center;
+     
+    padding: 20px;
+    margin: 20px auto; /* Centers the section and adds space around it */
+    max-width: 600px; /* Limits the maximum width and centralizes content */
+}
+
+.promo-section h2 {
+    color: #191720;
+    font-family: 'Inter', sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: -0.46px;
+    text-transform: capitalize;
+    margin-bottom: 0; /* Removes default margin to tighten spacing */
+}
+
+.promo-section h2 span {
+    color: #FF5331; /* Highlight color for the number */
+}
+
+.promo-section p {
+    color: var(--dark, #191720); /* Using CSS variable for color */
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.18px;
+    margin-top: 0; /* Aligns text closely under the h2 */
+}
+
+
+
+
+/* category */
+
+.food-categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1400px; /* Adjust according to layout requirements */
+    margin: 0 auto;
+}
+
+.categories {
+    display: flex;
+    gap: 100px; /* Space between each category */
+}
+
+.category img {
+    width: 60px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 5px; /* Space between image and text */
+}
+
+.category p {
+    text-align: center;
+    color: #666;
+}
+
+.promotion {
+    max-width: 300px; /* Limiting width for the promotion text */
+    padding-left: 20px; /* Space before the promotion text */
+}
+
+.promotion p {
+    font-size: 16px;
+    color: #333;
+}
+
+.promotion svg {
+    display: block; /* Ensure the SVG does not inline */
+    margin: 10px auto; /* Center the SVG horizontally and give some space */
+    width: 193px; /* Fixed width as per SVG's original width */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.highlight {
+    color: 
+    #009B00; /* Highlighting specific words */
+}
+
+.high-deal{
+    color: #FF5331;
+}
+
+
+/* part of svg quote */
+.food-highlights{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.food-highlights-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1500px; /* Adjust based on your design requirements */
+    margin: 0 auto;
+}
+
+.quote {
+    font-size: 18px;
+    color: #666;
+    flex: 1; /* Allocates maximum space for the text */
+    padding-right: 20px; /* Separates the text from the icons */
+}
+
+.categories {
+    display: flex;
+    gap: 170px; /* Space between icons */
+}
+
+.category img {
+    width: 80px; /* Adjust image size as necessary */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.category p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px; /* Smaller font size for category names */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center; /* Center alignment for the items */
+    }
+
+    .nav-links,
+    .auth-links {
+        flex-direction: column;
+        align-items: center; /* Ensure alignment is centered for stacked layout */
+        gap: 10px; /* Reduce gap for a cleaner mobile view */
+        width: 100%; /* Full width for better tap targets */
+    }
+
+    .logo,
+    .nav-links,
+    .auth-links {
+        margin-bottom: 10px; /* Space between elements when stacked */
+    }
+
+    .signup-btn {
+        width: 100%; /* Full width button for mobile */
+        height: 48px; /* Larger touch area */
+        padding: 10px; /* Padding for better visual balance */
+    }
+
+    .sp-sign {
+        padding-top: 10px; /* Reduced padding-top in mobile view */
+        padding-left: 45%;
+    }
+}
+
+
+/* Responsive adjustments for very small devices */
+@media (max-width: 596px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center; /* Center alignment for the items */
+    }
+
+    .nav-links,
+    .auth-links {
+        flex-direction: column;
+        align-items: center; /* Ensure alignment is centered for stacked layout */
+        gap: 10px; /* Reduce gap for a cleaner mobile view */
+        width: 100%; /* Full width for better tap targets */
+    }
+
+    .logo,
+    .nav-links,
+    .auth-links {
+        margin-bottom: 10px; 
+    }
+
+    .signup-btn {
+        width: 100%; 
+        height: 48px; 
+        padding: 10px; 
+    }
+
+    .sp-sign {
+        padding-top: 10px; 
+    }
+}
+
+
+/* Responsive sec1*/
+@media (max-width: 768px) {
+    .food-delivery-partner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .food-delivery-partner .content,
+    .food-delivery-partner .image {
+        width: 100%;
+    }
+
+    .food-delivery-partner .icons-two a {
+        display: block; /* Stack the download buttons on small screens */
+        margin-bottom: 10px;
+    }
+
+    .food-delivery-partner .image img {
+        max-width: 90%; /* Adjust for smaller screens */
+    }
+}
+
+/* */
+@media (max-width: 768px) {
+    .food-categories {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px; /* Reduced padding for smaller screens */
+    }
+
+    .categories, .promotion {
+        width: 100%; /* Full width to utilize the available space */
+        justify-content: center;
+        text-align: center; /* Centering text for a cohesive look */
+    }
+
+    .categories {
+        gap: 60px; /* Reduced gap for a tighter layout */
+    }
+
+    .promotion {
+        padding-top: 20px; /* Additional space above on smaller screens */
+    }
+
+    .promotion svg {
+        margin: 10px auto; /* Centering the SVG */
+        width: 160px; /* Adjusted width for better fit */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (max-width: 596px) {
+    .food-categories {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 5px; /* Further reduced padding for very small screens */
+    }
+
+    .categories, .promotion {
+        width: 100%; /* Ensure full width usage */
+        text-align: center;
+    }
+
+    .categories {
+        gap: 30px; /* Minimal gap to maximize space usage */
+    }
+
+    .category img {
+        width: 50px; /* Smaller images for smaller screens */
+    }
+
+    .promotion svg {
+        margin: 5px auto; /* Reduced margin for tighter layout */
+        width: 140px; /* Smaller SVG width for better fit */
+        height: auto;
+    }
+}
+
+/* svg quote */
+
+@media (max-width: 768px) {
+    .fd-one{
+        padding-left: 50%;
+    }
+
+    .food-highlights-two {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quote {
+        padding-right: 0; /* Removes right padding on smaller screens */
+        text-align: center; /* Centers the text */
+        margin-bottom: 20px; /* Space between the text and icons */
+    }
+
+    .categories {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .category img {
+        width: 35px; /* Slightly smaller images on very small screens */
+    }
+}

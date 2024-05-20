@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    background-color: white !important;
+    color: black;
+}
+
+.sbtn {
+    border-radius: 55px !important;
+    border: 10px solid #E94339 !important;
+    background-color: #E94339 !important;
+    color: white !important;
+    padding: 10px 20px !;
+    font-size: 16px !important;
+}
+
+.join {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.input {
+    width: 50% !important;
+    border: 0px #ffffff !important;
+    padding: 10px;
+    flex: 1;
+    border-radius: 25px 0 0 25px;
+    border-right: none;
+    width: 50px !important;
+}
+
+.obtn {
+    background-color: #FF5331 !important;
+    color: white !important;
+    border: 2px solid #FF5331;
+    border-radius: 0 25px 25px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.obtn {
+    background-color: #FF5331 !important;
+    color: white !important;
+    border-color: white !important;
+    font-size: 16px !important;
+    border-radius: 55px !important;
+    border-left: none;
+}
